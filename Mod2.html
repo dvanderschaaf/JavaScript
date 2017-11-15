@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <script type="text/javascript">
+      function Sum(){
+        var firstNumberInput = Number(document.getElementById("firstNumberInput").value);
+        var secondNumberInput = Number(document.getElementById("secondNumberInput").value);
+        if (isNaN(firstNumberInput) == false && isNaN(secondNumberInput) == false &&
+            firstNumberInput != "" && secondNumberInput != ""
+        ) {
+          console.log(firstNumberInput+secondNumberInput);
+          document.getElementById("firstOutput").value=(firstNumberInput+secondNumberInput);
+        }
+        else {
+          console.log("Please make sure both boxes are filled and only with numbers.");
+          alert("Please make sure both boxes are filled and only with numbers.");
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      function Multiply(){
+        var thirdNumberInput = Number(document.getElementById("thirdNumberInput").value);
+        var fourthNumberInput = Number(document.getElementById("fourthNumberInput").value);
+        if (isNaN(thirdNumberInput) == false && isNaN(fourthNumberInput) == false &&
+            thirdNumberInput != "" && fourthNumberInput != ""
+        ) {
+          console.log(thirdNumberInput+fourthNumberInput);
+          document.getElementById("secondOutput").value=(thirdNumberInput+fourthNumberInput);
+        }
+        else {
+          console.log("Please make sure both boxes are filled and only with numbers.");
+          alert("Please make sure both boxes are filled and only with numbers.");
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      function TripleSum(){
+        var fifthNumberInput = Number(document.getElementById("fifthNumberInput").value);
+        var sixthNumberInput = Number(document.getElementById("sixthNumberInput").value);
+        if (isNaN(fifthNumberInput) == false && isNaN(sixthNumberInput) == false &&
+            fifthNumberInput != "" && sixthNumberInput != ""
+        ) {
+          console.log((fifthNumberInput+sixthNumberInput)*3);
+          document.getElementById("thirdOutput").value=((fifthNumberInput+sixthNumberInput)*3);
+        }
+        else {
+          console.log("Please make sure both boxes are filled and only with numbers.");
+          alert("Please make sure both boxes are filled and only with numbers.");
+        }
+      }
+    </script>
+  </header>
+
+    <h1>Welcome to the Calculations Page</h1>
+
+  <form>
+    Sum First Number:<br>
+    <input type="text" id="firstNumberInput">
+    <br>
+    Sum Second Number:<br>
+    <input type="text" id="secondNumberInput">
+    <button type="button" onclick="Sum()">Sum</button>
+    <input type="text" id="firstOutput">
+    <br><br>
+    Multiply First Number:<br>
+    <input type="text" id="thirdNumberInput">
+    <br>
+    Multiply Second Number:<br>
+    <input type="text" id="fourthNumberInput">
+    <button type="button" onclick="Multiply()">Multiply</button>
+    <input type="text" id="secondOutput">
+    <br><br>
+    Triple of Sum First Number:<br>
+    <input type="text" id="fifthNumberInput">
+    <br>
+    Triple of Sum Second Number:<br>
+    <input type="text" id="sixthNumberInput">
+    <button type="button" onclick="TripleSum()">Triple of Sum</button>
+    <input type="text" id="thirdOutput">
+
+  </form>
+
+
+  </body>
+</html>
