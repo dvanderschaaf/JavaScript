@@ -2,7 +2,7 @@
 <html>
   <header>
     <script type="text/javascript">
-      Sum(){
+      function Sum(){
         var firstNumberInput = Number(document.getElementById("firstNumberInput").value);
         var secondNumberInput = Number(document.getElementById("secondNumberInput").value);
         if (isNaN(firstNumberInput) == false && isNaN(secondNumberInput) == false &&
@@ -12,13 +12,13 @@
           document.getElementById("firstOutput").value=(firstNumberInput+secondNumberInput);
         }
         else {
-          console.log("Please make sure both boxes are filled and only with numbers.");
-          alert("Please make sure both boxes are filled and only with numbers.");
+          console.log("Please make sure both boxes are filled and numbers.");
+          alert("Please make sure both boxes are filled and numbers.");
         }
       }
     </script>
     <script type="text/javascript">
-      Multiply(){
+      function Multiply(){
         var thirdNumberInput = Number(document.getElementById("thirdNumberInput").value);
         var fourthNumberInput = Number(document.getElementById("fourthNumberInput").value);
         if (isNaN(thirdNumberInput) == false && isNaN(fourthNumberInput) == false &&
@@ -28,13 +28,13 @@
           document.getElementById("secondOutput").value=(thirdNumberInput+fourthNumberInput);
         }
         else {
-          console.log("Please make sure both boxes are filled and only with numbers.");
-          alert("Please make sure both boxes are filled and only with numbers.");
+          console.log("Please make sure both boxes are filled and numbers.");
+          alert("Please make sure both boxes are filled and numbers.");
         }
       }
     </script>
     <script type="text/javascript">
-      TripleSum(){
+      function TripleSum(){
         var fifthNumberInput = Number(document.getElementById("fifthNumberInput").value);
         var sixthNumberInput = Number(document.getElementById("sixthNumberInput").value);
         if (isNaN(fifthNumberInput) == false && isNaN(sixthNumberInput) == false &&
@@ -44,8 +44,8 @@
           document.getElementById("thirdOutput").value=((fifthNumberInput+sixthNumberInput)*3);
         }
         else {
-          console.log("Please make sure both boxes are filled and only with numbers.");
-          alert("Please make sure both boxes are filled and only with numbers.");
+          console.log("Please make sure both boxes are filled and numbers.");
+          alert("Please make sure both boxes are filled and numbers.");
         }
       }
     </script>
