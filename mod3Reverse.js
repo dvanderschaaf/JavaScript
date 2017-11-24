@@ -1,4 +1,7 @@
 function reverseString() {
-      //take entered string and log the reverse
-      console.log(reverseString(document.getElementById("stringToReverse").value));
-}
+  for(count = 0; count < 1; count++){
+      rev = document.getElementById("stringToReverse").value.split("").reverse().join("");
+      console.log(rev);
+      document.getElementById("stringReverseOutput").value=(rev);
+   };
+};
