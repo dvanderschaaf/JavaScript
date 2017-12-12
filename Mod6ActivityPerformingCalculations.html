@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="utf-8"/>
+    <script src="Mod6ActivityPerformingCalculations.js"></script>
+    <link rel="stylesheet" href="themes/ProjectTheme.min.css" />
+  	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+  	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+      #displayHere th{
+        text-align: left;
+        background-color: rgb(0, 62, 103);
+        color: white;
+        font-weight: normal;
+      }
+
+      #displayHere tr:nth-child(even){
+        background-color: white;
+      }
+    </style>
+
+  </header>
+    <h1>Welcome to the Triangle Calculations Page</h1>
+
+  <form>
+    Base:<input type="text" id="base">
+    <br>
+    Height:<input type="text" id="height">
+    <br>
+    Area:<input type="text" id="area">
+    <br>
+    <button type="button" onclick="CalculateTriangle()">Place in table</button>
+  </form>
+
+
+  </body>
+</html>
