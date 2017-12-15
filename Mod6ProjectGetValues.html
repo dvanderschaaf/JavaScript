@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="utf-8"/>
+    <script src="mod6ProjectGetValues.js"></script>
+    <link rel="stylesheet" href="themes/ProjectTheme.min.css" />
+  	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+  	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+      #displayHere th{
+        text-align: left;
+        background-color: rgb(0, 62, 103);
+        font-weight: normal;
+        color: white;
+      }
+
+      #displayHere tr:nth-child(even){
+        background-color: white;
+      }
+    </style>
+
+  </header>
+    <h1>Welcome to the Get Values Page</h1>
+
+  <form id="demo" onmouseover="over(this)"  onmouseout="out(this)">
+    First Name:<input type="text" id="fname">
+    <br>
+    Last Name:<input type="text" id="lname">
+    <br>
+    Address:<input type="text" id="address">
+    <br>
+    City:<input type="text" id="city">
+    <br>
+    State:<input type="text" id="state">
+    <br>
+    <button type="button" onclick="GetValues()">Place in table</button>
+  </form>
+  <table id="displayHere" style="width:100%">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+    </tr>
+  </table>
+  <script type"text/javascript">
+    function over(t) {
+      t.style.fontWeight = "bold";
+      t.style.color = "red";
+    }
+    function out(t) {
+      t.style.fontWeight = "normal";
+      t.style.color = "white";
+    }
+  </script>
+
+  </body>
+</html>
